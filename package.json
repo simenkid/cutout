@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/simenkid/cutout#readme",
   "dependencies": {
+    "caman": "^4.1.2",
     "get-pixels": "^3.3.0",
-    "gm": "^1.23.0",
     "posterize": "^1.0.2",
     "save-pixels": "^2.3.4"
   }
