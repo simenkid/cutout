@@ -1,11 +1,13 @@
 // sudo apt-get install libcairo2-dev libjpeg-dev libgif-dev
-
-// var fs = require('fs'),
-//     gm = require('gm'),
-//     getPixels = require('get-pixels'),
-//     savePixels = require('save-pixels');
-
 var Caman = require('caman').Caman;
+
+var fs = require('fs'),
+//    gm = require('gm'),
+    getPixels = require('get-pixels'),
+    savePixels = require('save-pixels');
+
+
+Caman = require('caman').Caman;
 
 Caman.Filter.register('posterize', function (adjust) {
   var numOfAreas = 256 / adjust;
@@ -56,8 +58,8 @@ Caman("./origin.jpg", function () {
   // this.brightness(10);
   // this.gamma(1.2);
   // this.greyscale();
-  // this.posterize(4);
-    this.example();
+   this.posterize(4);
+  //  this.example();
 
   this.render(function () {
     this.save("./output.png");
